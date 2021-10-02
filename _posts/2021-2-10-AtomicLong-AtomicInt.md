@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Using AtomicLong and AtomicInt in concurrency
 ---
 
 This is an excerpt collected from the book "Java Concurrency in practice"
