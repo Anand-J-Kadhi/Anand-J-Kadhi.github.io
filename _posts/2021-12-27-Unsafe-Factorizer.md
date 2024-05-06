@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Atomicity
+categories: [Technical, Java]
+tags: [concurrency]
 ---
 
 This is an excerpt collected from the book "Java Concurrency in practice"
 
-![Java-Concurrency-In-Pracice-book]({{ site.baseurl }}/assets/images/jcip.jpg)
+![Java-Concurrency-In-Pracice-book]({{ site.baseurl }}/assets/image/jcip.jpg)
 
 There is a hit counter which measures the number of requests processed. The obvios approach is to add a long field to the servlet and increment it on each request , as shown in UnsafeCountingFactorizer
 
