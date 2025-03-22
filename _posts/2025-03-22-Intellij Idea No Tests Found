@@ -1,0 +1,20 @@
+---
+title:  Intellij Idea No Tests were found
+date: 2025-03-22 11:00:00 +0800
+categories: [Technical, Intellij Idea,Java]
+tags: [Testing]
+---
+I wrote sample test for Spring Hibernate Many-to-Many Unidirectional mapping . 
+When I tried to run only 1 out of 4 test cases were running , googled and found some 
+solutions suggesting to invlidate the caches. Did it twice but got same error.
+
+> No tests found 
+
+![No tests found ]({{ site.baseurl }}/assets/image/no-tests-found.JPG)
+
+Later on I found that the issue is not with Intellij, Test framework or cache. Instead the 
+test method decleration had private access modifier for 3 tests out of 4 due to which the tests
+were not recognized . seems silly but thought to share this as it actually wasted my 30 mins to figure out 
+whats wrong
+
+![Private modifier removed ]({{ site.baseurl }}/assets/image/no-tests-found-solution.JPG)
